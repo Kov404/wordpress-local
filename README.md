@@ -1,4 +1,4 @@
-# WordPress Local com Docker - Linux
+# WordPress Local com Docker 
 
 Este projeto configura um ambiente WordPress local completo usando Docker, incluindo MySQL e phpMyAdmin.
 
