@@ -10,7 +10,7 @@ if ! command -v docker &> /dev/null; then
     exit 1
 fi
 
-# Verificar se Docker Compose está instalado
+# Verificar  Docker Compose 
 if ! command -v docker-compose &> /dev/null; then
     echo " Docker Compose não está instalado!"
     echo "Instale o Docker Compose primeiro"
@@ -48,7 +48,7 @@ echo "   Banco: wordpress"
 echo "   Usuário: wordpress"
 echo "   Senha: wordpress123"
 echo ""
-echo " Comandos úteis:"
+echo " Comandos uteis:"
 echo "   Parar containers: docker-compose down"
 echo "   Ver logs: docker-compose logs -f"
 echo "   Reiniciar: docker-compose restart"
