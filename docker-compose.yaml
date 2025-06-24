@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # Banco de dados MySQL
   db:
     image: mysql:8.0
     container_name: wordpress_db
@@ -18,7 +17,6 @@ services:
     ports:
       - "3306:3306"
 
-  # WordPress
   wordpress:
     depends_on:
       - db
@@ -39,7 +37,7 @@ services:
     networks:
       - wordpress_network
 
-  # phpMyAdmin (opcional - para gerenciar banco de dados)
+  # phpMyAdmin (opcional)
   phpmyadmin:
     depends_on:
       - db
